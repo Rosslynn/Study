@@ -29,6 +29,6 @@ describe('List.tsx', () => {
 
     render(<List {...userInformation} />);
 
-    expect(screen.getByTestId('user-lastname')).toBeNull();
+    expect(screen.queryByTestId('user-lastname')).toBeNull();
   });
 })
